@@ -5,14 +5,14 @@ pipeline {
             }
       }
     triggers {
-        pollSCM '*/2 * * * *'
+        pollSCM '* * * * *'
     }
     stages {
         stage('Build') {
             steps {
                 echo "Building.."
                 sh '''
-                echo "doing build stuff..."
+                echo "doing build first stuff..."
                 '''
             }
         }
